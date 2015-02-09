@@ -15,7 +15,7 @@
 
     it("The car name and model should be a property of the car", function() {
       var toyota  = new Car('Toyota', 'Corolla');
-      expect(toyota.name).toBe('Toyota', 'Corolla');
+      expect(toyota.name).toBe('Toyota');
       expect(toyota.model).toBe('Corolla');
     });
 
@@ -35,7 +35,7 @@
 
       var koenigsegg = new Car('Koenigsegg', 'Agera R');
       expect(koenigsegg.numOfWheels).toBe(4);
-      expect(koenigsegg.isSaloon).toBe(true);
+      expect(koenigsegg.isSaloon).toBeTruthy();
     });
 
     it("The Trailer should have speed 0 km/h until you put `the pedal to the metal`", function() {
